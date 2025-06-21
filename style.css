@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    background-color:black;
+    color:white;
+}
+.game{
+    display:flex;
+    gap:50px;
+}
+.player_side, .computer_side{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+.lower_side_player, .lower_side_computer{
+    display:flex;
+}
+.your_letters, .computer_letters{
+    display:grid;
+    grid-template-columns: repeat(10,50px);
+}
+.your_letters>*, .computer_letters>*{
+    text-align: center;
+}
+.player_grid, .computer_grid{
+    display:grid;
+    grid-template-columns: repeat(10,50px);
+    gap:0;
+}
+.player_grid>*, .computer_grid>*{
+    border:1px solid black;
+    aspect-ratio: 1;
+    margin:0;
+}
+.player_grid>*:hover, .computer_grid>*:hover{
+    background-color: lightgray;
+}
+.your_numbers, .computer_numbers{
+    display:flex;
+    flex-direction: column;
+    margin-right:10px;
+}
+.your_numbers>*, .computer_numbers>*{
+    text-align: center;
+}
+.purple{
+    background-color: purple;
+}
+.play_buttons>*{
+    height:50px;
+    font-size:25px;
+    aspect-ratio: 3;
+    border-radius:10px;
+    box-shadow:0 0 10px black;
+}
+.play_buttons>*:hover{
+    cursor:pointer;
+    background:linear-gradient(90deg,gray,lightgray);
+}
